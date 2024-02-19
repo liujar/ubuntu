@@ -13,7 +13,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN wget https://hub.yzuu.cf/prometheus/prometheus/releases/download/v2.49.1/prometheus-2.49.1.linux-amd64.tar.gz && \
+RUN wget https://github.com/prometheus/prometheus/releases/download/v2.49.1/prometheus-2.49.1.linux-amd64.tar.gz && \
     tar -xvzf prometheus-2.49.1.linux-amd64.tar.gz && \
     rm -rf prometheus-2.49.1.linux-amd64.tar.gz
 

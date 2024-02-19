@@ -13,11 +13,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/prometheus/prometheus/releases/download/v2.49.1/prometheus-2.49.1.linux-amd64.tar.gz && \
-    tar -xvzf prometheus-2.49.1.linux-amd64.tar.gz && \
-    rm -rf prometheus-2.49.1.linux-amd64.tar.gz
-
-# 运行prometheus应用
-CMD ["echo", "Hello, world!"]
+# 欢迎
+CMD ["echo", "lja!"]
 
 # 可选：添加健康检查命令
